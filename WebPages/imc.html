@@ -1,0 +1,72 @@
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>IMC</title>
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/calcula.css">
+	</head>
+	<body>
+		<div role="navigation" class="navbar navbar-inverse navbar-static-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">FMU</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="cadastro.html">Cadastro</a></li>
+						<li><a href="media.html">Media</a></li>
+						<li><a href="imc.html">IMC</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1 align="center"><span class="label label-default">IMC</span></h1>
+		<form id =imcForm method="GET" style="margin-top:10%">
+			<div class="borda" id="borda" align="center">
+				<div class="container span7 text-center col-md-6 col-md-offset-3">
+					<div class="input-group" id = "divPeso">
+						<span class="input-group-addon" id="basic-addon1">Peso</span>
+						<input id = "idPeso" type="number" class="form-control" placeholder="Digite o seu peso...">
+						<span id = "kg" class="input-group-addon" id="basic-addon1">kg</span>
+					</div>
+					<br>
+					<div class="input-group" >
+						<span class="input-group-addon" id="basic-addon1">Altura</span>
+						<input id = "idAltura" type="number" class="form-control" placeholder="Digite a sua altura...">
+						<span id = "cm" class="input-group-addon" id="basic-addon1">cm</span>
+					</div>
+					<br>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">Resultado</span>
+						<input id = "resultado" type="number" class="form-control" value="0" readonly>
+						<span id = "imc" class="input-group-addon" id="basic-addon1">IMC</span>
+					</div>
+					<br>
+					<div align="left">
+						<button id = btnCalcula type="button" class="btn btn-success">Ok</button>
+						<button id = "btnApagar" type="button" class="btn btn-danger">Apagar</button>
+					</div>
+					<br>
+					<br>
+					<div id="texto2">
+						<h3><span class="label label-danger" id="texto" >Teste</span></h3>
+					</div>
+
+
+				</div>
+			</div>
+		</form>
+		<script type="text/javascript" src = "js/calcula.js"></script>
+	</body>
+	</html>
